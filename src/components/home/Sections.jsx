@@ -65,9 +65,9 @@ const SectionThree = ()=>{
         <img src="../../images/comida.jpg" alt="" className="w-full h-full"/>
        
         </div>
-        <div className="px-24 py-40 md:w-6/12 w-full text-center md:text-left flex flex-col gap-6 relative z-[1]">
+        <div className="md:px-24 py-40 md:w-6/12 w-10/12 m-auto text-center md:text-left flex flex-col gap-6 relative z-[1]">
         <span className='text-yellow-200 font-serif font-bold text-sm  tracking-widest'>SPECIAL DISH</span>
-        <BsBookmarkStarFill className='absolute md:left-12 top-[80px]  left-[48%] text-yellow-200 md:top-48 text-4xl animate-bounce'></BsBookmarkStarFill>
+        <BsBookmarkStarFill className='absolute md:left-12 top-[80px]  left-[47%] text-yellow-200 md:top-48 text-4xl animate-bounce'></BsBookmarkStarFill>
         <img src="../../images/separator.svg" alt="" className="h-4 w-fit m-auto md:m-0" />
         <h4 className="text-4xl font-light">Every Fla vor Tells a Story</h4>
         <span className='font-light leading-8'>Lornd  industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries, but also the leap into.</span>

@@ -43,7 +43,7 @@ const Header = () =>{
     {text: "OTRO", move: "sectionFour"},
     {text: "OTRO", move: "sectionFive"},
   ]
-    return <div className={`fixed z-[20] bg-[] z-[99] bg-[#121212] md:bg-transparent ${scrolled ? 'md:bg-[#121212]' : ''}`}>
+    return <div className={`fixed z-[20] bg-[] z-[99] bg-[#121212] ${scrolled ? 'md:bg-[#121212]' : 'md:bg-transparent'}`}>
       <div className=" flex flex-col md:flex-row justify-between px-6 py-4 border-b border-yellow-50 text-sm font-light">
         <div className="left text-yellow-50 flex gap-1 items-center">
           <BsGeoAltFill className="text-xl"></BsGeoAltFill>
