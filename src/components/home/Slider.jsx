@@ -28,37 +28,45 @@ const Slider = () => {
 
   return (
     <div className="w-full h-screen relative">
-
       <button
         className="z-[90] border-yellow-200 rotate-45 absolute left-6 translate-y-[-50%] top-[50%] p-6 border"
         onClick={prevSlide}
-      >
-      </button>
-      <span className="z-[80] font-light -rotate-90 absolute left-11 translate-y-[-50%] top-[50%] text-yellow-200 text-4xl">^</span>
+      ></button>
+      <span className="z-[80] font-light -rotate-90 absolute left-11 translate-y-[-50%] top-[50%] text-yellow-200 text-4xl">
+        ^
+      </span>
       <button
         className="z-[90] border-yellow-200 rotate-45 absolute right-6 translate-y-[-50%] top-[50%] p-6 border"
         onClick={prevSlide}
-      >
-      </button>
-      <span className="z-[80] font-light rotate-90 absolute right-11 translate-y-[-50%] top-[50%] text-yellow-200 text-4xl">^</span>
-     
+      ></button>
+      <span className="z-[80] font-light rotate-90 absolute right-11 translate-y-[-50%] top-[50%] text-yellow-200 text-4xl">
+        ^
+      </span>
+
       <div className="image-container">
         {images.map((image, index) => (
-          <div className="">  
-             <div className="text-center w-6/12 m-auto flex flex-col gap-6 md:top-60 top-52 left-[50%] translate-x-[-50%] absolute z-[90]">
-        <span className="text-yellow-200 font-serif font-bold text-sm  tracking-widest">FLAVORS FOR RUNE</span>
-        <img src="../../images/separator.svg" alt="" className="h-4" />
-        <h4 className="md:text-8xl text-4xl font-light text-yellow-50">We Offer Top Notch</h4>
-<span className="font-light leading-8 text-yellow-50">Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys standard dummy text ever.</span>
-    </div>
-          <img
-            key={index}
-            src={`images/${image}`}
-            alt={`Slide ${index}`}
-            className={`w-full h-full absolute transition-opacity duration-1000 ${
-              index === currentImage ? "opacity-100" : "opacity-0"
-            }`}
-          />
+          <div className="" key={index}>
+            <div className="text-center w-6/12 m-auto flex flex-col gap-6 md:top-60 top-52 left-[50%] translate-x-[-50%] absolute z-[90]">
+              <span className="text-yellow-200 font-serif font-bold text-sm  tracking-widest">
+                DELICIAS EN MINUTOS
+              </span>
+              <img src="../../images/separator.svg" alt="" className="h-4" />
+              <h4 className="md:text-8xl text-4xl font-light text-yellow-50">
+                SABOR EXPRESS
+              </h4>
+              <span className="font-light leading-8 text-yellow-50">
+                ¡Bienvenido a Sabor Express! Tu destino para disfrutar de
+                deliciosas comidas rápidas con un toque de autenticidad y
+                rapidez. ¡Déjate llevar por el sabor y la velocidad!
+              </span>
+            </div>
+            <img
+              src={`images/${image}`}
+              alt={`Slide ${index}`}
+              className={`w-full h-full absolute transition-opacity duration-1000 ${
+                index === currentImage ? "opacity-100" : "opacity-0"
+              }`}
+            />
           </div>
         ))}
       </div>

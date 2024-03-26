@@ -37,19 +37,18 @@ const Header = () =>{
   }
 
   const items = [
-    {text: "HOME", move: "sectionOne"},
-    {text: "CATEGORY", move: "sectionTwo"},
-    {text: "OTRO", move: "sectionThree"},
-    {text: "OTRO", move: "sectionFour"},
-    {text: "OTRO", move: "sectionFive"},
+    {text: "INICIO", move: "sectionOne"},
+    {text: "SOBRE NOSOTROS", move: "sectionThree"},
+    {text: "PLATO ESPECIAL", move: "sectionFour"},
+    {text: "CARTA", move: "sectionFive"},
   ]
     return <div className={`fixed z-[20] bg-[] z-[99] bg-[#121212] ${scrolled ? 'md:bg-[#121212]' : 'md:bg-transparent'}`}>
       <div className=" flex flex-col md:flex-row justify-between px-6 py-4 border-b border-yellow-50 text-sm font-light">
         <div className="left text-yellow-50 flex gap-1 items-center">
           <BsGeoAltFill className="text-xl"></BsGeoAltFill>
-          <span>Restaurant St, Delicious City, London 9578, UK</span><FaFeatherAlt className="text-sm text-yellow-200 mx-2"></FaFeatherAlt>
+          <span>Restaurant St, Sabor Express, Puerto Maldonado, PEM</span><FaFeatherAlt className="text-sm text-yellow-200 mx-2"></FaFeatherAlt>
           <BiTime className="text-xl"></BiTime>
-          <span>Daily : 8.00 am to 10.00 pm</span>
+          <span>Todos los días : 8.00 am a 10.00 pm</span>
           </div>
         <div className="right text-yellow-50 flex items-center gap-1"><BsTelephone></BsTelephone><span>987676544</span></div>
       </div>
@@ -77,13 +76,14 @@ if (nav.classList.contains("block")) {
     {/* <li class='py-4 px-6 sm:border-b-2 border-blue-300 hover:text-blue-300 transition duration-200 text-blue-300 hover:bg-gray-800 sm:hover:bg-transparent text-white '><a href="">Home</a></li> */}
   {items.map((item, index)=>(
     <Link
+    key={index}
     to={item.move}
     spy={true}
     smooth={true}
     offset={-70} // Ajusta el desplazamiento según tu diseño
     duration={500} // Duración de la animación en milisegundos
   >
-     <Links key={index} text={item.text}/>
+     <Links  text={item.text}/>
   </Link>
   ))}
   </ul>

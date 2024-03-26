@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.food:nth-child(2n+1){
+    background: #373632;
+}
+
+.food:nth-child(2n+1)>.left{
+ order: 2;
+}
+
+
+.food:nth-child(2n+1) > .content-image > .price {
+    /* Estilos para elementos .price en posiciones impares dentro de .food */
+    left: -30px;
+  }
+  
+
+/* #2b2a28 */
