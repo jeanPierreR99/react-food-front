@@ -2,6 +2,7 @@ import { Card1, Card2 } from "./SectionCard";
 import { BsBookmarkStarFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 export const SectionFive = () => {
+
   const items = [
     {
       type: "HELADO",
@@ -103,11 +104,11 @@ export const SectionFive = () => {
             )}
           </div>
         </div>
-        <Link to="/menu" className="z-[10]">
+        <a href="/menu" className="z-[10]">
             <button className="text-yellow-100 border w-fit m-auto px-6 py-3 duration-500 ease-in hover:bg-yellow-200 hover:text-black text-sm font-serif">
                 VER TODA LA CARTA
             </button>
-        </Link>
+        </a>
 
         <img
           src="../../images/fondo-utensilios-cocina-dibujados-mano-pizarra-iconos-vectoriales-estilo-boceto-blanco-negro_624018-25.avif"

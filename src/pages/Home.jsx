@@ -6,6 +6,7 @@ import {SectionFour} from "../components/home/SectionFour";
 import {SectionFive} from "../components/home/SectionFive";
 import "./Home.css";
 import { Element } from "react-scroll";
+import LuzCursor from "../components/LuzCursor";
 const Home = () => {
   return (
     <>
@@ -25,6 +26,7 @@ const Home = () => {
       <Element name="sectionFive">
         <SectionFive></SectionFive>
       </Element>
+      <LuzCursor></LuzCursor>
     </>
   );
 };

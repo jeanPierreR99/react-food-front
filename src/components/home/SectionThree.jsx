@@ -1,5 +1,6 @@
 import { Card1, Card2 } from "./SectionCard";
 import { BsBookmarkStarFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 export const SectionThree = () => {
   return (
     <div className="w-full pb-40 bg-[#161718] relative text-yellow-50 py-20">
@@ -30,9 +31,11 @@ export const SectionThree = () => {
           <span className="font-light text-yellow-100 text-3xl">
             +51 957522312
           </span>
-          <button className="text-yellow-100 border w-fit m-auto px-6 py-3 duration-500 ease-in hover:bg-yellow-200 hover:text-black text-sm font-serif">
-            SEGUIR LEYENDO
-          </button>
+          <a href="/menu" className="z-[10]">
+            <button className="text-yellow-100 border w-fit m-auto px-6 py-3 duration-500 ease-in hover:bg-yellow-200 hover:text-black text-sm font-serif">
+                SEGUIR LEYENDO
+            </button>
+        </a>
         </div>
         <div className="relative z-[1] md:w-6/12 w-12/12 m-auto">
           <img

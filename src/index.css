@@ -1,19 +1,75 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.food:nth-child(2n+1){
-    background: #373632;
+.food:nth-child(2n + 1) {
+  background: #373632;
+}
+.food:nth-child(2n + 1) > .left {
+  order: 2;
 }
 
-.food:nth-child(2n+1)>.left{
- order: 2;
-}
-
-
-.food:nth-child(2n+1) > .content-image > .price {
-    /* Estilos para elementos .price en posiciones impares dentro de .food */
-    left: -30px;
+.food:nth-child(2n + 1) > .content-image > .price {
+  left: -30px;
+  @media only screen and (max-width: 768px) {
+    left: 10px; /* Ajustar estilos para pantallas pequeñas */
   }
-  
-
+}
 /* #2b2a28 */
+
+
+
+/* fff */
+.luz-cursor-container {
+  position: fixed;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.luz-cursor-light1{
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(202, 208, 229, 0.43);
+  transition: opacity 0.3s ease;
+  height: 500px;
+  width: 500px;
+  opacity: .03;
+  filter: blur(23px);
+}
+.luz-cursor-light2{
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(202, 208, 229, 0.43);
+  transition: opacity 0.3s ease;
+  height: 400px;
+  width: 400px;
+  opacity: .04;
+  filter: blur(23px);
+}
+.luz-cursor-light3{
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(202, 208, 229, 0.43);
+  transition: opacity 0.3s ease;
+  height: 300px;
+  width: 300px;
+  opacity: .05;
+  filter: blur(23px);
+}
+.luz-cursor-light4{
+  position: absolute;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+  height: 150px;
+  width: 150px;
+  opacity: .06;
+  background: rgba(255, 255, 255, 0.613);
+  filter: blur(23px);
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

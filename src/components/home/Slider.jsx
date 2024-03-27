@@ -27,7 +27,7 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen relative">
+    <div className="w-full md:h-screen h-[70vh] relative">
       <button
         className="z-[90] border-yellow-200 rotate-45 absolute left-6 translate-y-[-50%] top-[50%] p-6 border"
         onClick={prevSlide}
@@ -46,7 +46,7 @@ const Slider = () => {
       <div className="image-container">
         {images.map((image, index) => (
           <div className="" key={index}>
-            <div className="text-center w-6/12 m-auto flex flex-col gap-6 md:top-60 top-52 left-[50%] translate-x-[-50%] absolute z-[90]">
+            <div className="text-center w-8/12 md:w-6/12 m-auto flex flex-col gap-6 md:top-60 top-40 top-52 left-[50%] translate-x-[-50%] absolute z-[90]">
               <span className="text-yellow-200 font-serif font-bold text-sm  tracking-widest">
                 DELICIAS EN MINUTOS
               </span>

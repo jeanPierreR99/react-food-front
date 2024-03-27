@@ -9,7 +9,7 @@ const Card1 = ({ text, image }) => {
       <img className="w-full h-[400px]" src={image} alt="" />
       <h4 className="text-yellow-50 text-2xl font-light">{text}</h4>
       <a
-        href=""
+        href="/menu"
         className="w-fit m-auto pb-1 duration-200 ease-in-out hover:border-b-4 hover:border-yellow-200 border-double text-yellow-200 font-serif font-bold text-xs"
       >
         VER CARTA
