@@ -20,13 +20,13 @@ const Card1 = ({ text, image }) => {
 
 const Card2 = ({ type, title, description, image, price }) => {
   return (
-    <div className="w-full flex gap-4">
-      <img src={image} alt="" className="w-28 rounded-lg" />
-      <div className="">
-      <span className="text-xl text-yellow-100 font-medium">{type}</span>
+    <div className="w-full md:flex gap-4">
+      <img src={image} alt="" className="w-full h-[200px] md:h-auto md:w-28" />
+      <div className="mt-6 md:mt-0">
+      <span className="text-xs md:text-xl text-yellow-100 font-bold">{type}</span>
         <div className="flex justify-between">
-          <span className="text-xl text-gray-300 font-medium">{title}</span>
-          <span className="text-xl text-yellow-100 font-medium">{price}</span>
+          <span className="text-xs md:text-xl text-gray-300 font-medium">{title}</span>
+          <span className="text-xs md:text-xl text-yellow-100 font-medium">{price}</span>
         </div>
         <span className="text-gray-300">{description}</span>
       </div>

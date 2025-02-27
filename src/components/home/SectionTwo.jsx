@@ -1,5 +1,4 @@
-import {Card1, Card2} from './SectionCard'
-import {BsBookmarkStarFill} from "react-icons/bs"
+import {Card1} from './SectionCard'
 
 export const SectionTwo = ()=>{
 
@@ -18,8 +17,8 @@ export const SectionTwo = ()=>{
     <div className="text-center md:w-4/12 w-10/12 m-auto mb-28 flex flex-col gap-6 relative z-[1]">
         <span className="text-yellow-200 font-serif font-bold text-sm  tracking-widest">DELICIAS EN MINUTOS</span>
         <img src="../../images/separator.svg" alt="" className="h-4" />
-        <h4 className="md:text-5xl text-4xl font-light">Ofrecemos</h4>
-<span className="font-light leading-8">Nuestra carta contiene desde variedades de sabores de helados, hamburguesas personalizables hasta menús tradicionales y regionales</span>
+        <h4 className="md:text-5xl text-2xl font-light">Ofrecemos</h4>
+<span className="font-light leading-5 text-xs md:text-xl">Nuestra carta contiene desde variedades de sabores de helados, hamburguesas personalizables hasta menús tradicionales y regionales</span>
     </div>
     <div className="relative z-[1] flex flex-wrap gap-20 md:gap-0 justify-around">
          <div className="md:mt-[-150px] relative">

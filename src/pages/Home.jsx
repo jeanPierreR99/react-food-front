@@ -1,34 +1,36 @@
-import Header from "../components/home/Header";
-import {SectionOne} from "../components/home/SectionOne";
-import {SectionTwo} from "../components/home/SectionTwo";
-import {SectionThree} from "../components/home/SectionThree";
-import {SectionFour} from "../components/home/SectionFour";
-import {SectionFive} from "../components/home/SectionFive";
-import "./Home.css";
-import { Element } from "react-scroll";
-import LuzCursor from "../components/LuzCursor";
+import Header from '../components/home/Header'
+import { SectionOne } from '../components/home/SectionOne'
+import { SectionTwo } from '../components/home/SectionTwo'
+import { SectionThree } from '../components/home/SectionThree'
+import { SectionFour } from '../components/home/SectionFour'
+import { SectionFive } from '../components/home/SectionFive'
+import './Home.css'
+import { Element } from 'react-scroll'
+import LuzCursor from '../components/LuzCursor'
+import Footer from '../components/Footer'
 const Home = () => {
   return (
     <>
       <Header></Header>
-      <Element name="sectionOne">
+      <Element name='sectionOne'>
         <SectionOne></SectionOne>
       </Element>
-      <Element name="sectionTwo">
+      <Element name='sectionTwo'>
         <SectionTwo></SectionTwo>
       </Element>
-      <Element name="sectionThree">
+      <Element name='sectionThree'>
         <SectionThree></SectionThree>
       </Element>
-      <Element name="sectionFour">
-      <SectionFour></SectionFour>
+      <Element name='sectionFour'>
+        <SectionFour></SectionFour>
       </Element>
-      <Element name="sectionFive">
+      <Element name='sectionFive'>
         <SectionFive></SectionFive>
       </Element>
       <LuzCursor></LuzCursor>
+      <Footer></Footer>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

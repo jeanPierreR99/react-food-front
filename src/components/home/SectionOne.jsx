@@ -1,6 +1,4 @@
 import Slider from "./Slider";
-import {Card1, Card2} from './SectionCard'
-import {BsBookmarkStarFill} from "react-icons/bs"
 export const SectionOne = () =>{
 
     return <div className="relative h-full">
